@@ -16,6 +16,7 @@
 
 
 + (UINib *)Nib
+
 {
     return [UINib nibWithNibName:@"HCollectionViewCell" bundle:nil];
 }
