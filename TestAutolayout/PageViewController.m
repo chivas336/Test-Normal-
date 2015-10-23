@@ -11,15 +11,15 @@
 #import "SecondViewController.h"
 #import "ThirdTableViewController.h"
 
-#import "HCollectionViewCell.h"
+#import "GuideView.h"
 
 #import <Masonry.h>
 
-@interface PageViewController ()<UIPageViewControllerDataSource,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
+@interface PageViewController ()<UIPageViewControllerDataSource>
 
 @property (nonatomic, strong) UIPageViewController *pageViewController;
 
-@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet UIView *guideView;
 
 
 @property (nonatomic, strong) BranchTableViewController *firstVC;
@@ -70,17 +70,21 @@
     [self.view addSubview:self.pageViewController.view];
     [self.pageViewController.view mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.and.bottom.mas_equalTo(self.view);
-        make.top.mas_equalTo(@(30));
+        make.top.mas_equalTo(@(31));
     }];
     
     [self.pageViewController didMoveToParentViewController:self];
+   
     
+    GuideView *guideView = [[[NSBundle mainBundle] loadNibNamed:@"GuideView" owner:self options:nil] objectAtIndex:0];
+    guideView.SelectBlock = ^(NSInteger index){
+        
+    };
+    [self.guideView addSubview:guideView];
+    [guideView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(self.guideView);
+    }];
     
-    self.collectionView.delegate = self;
-    self.collectionView.dataSource = self;
-
-    
-    [self.collectionView registerNib:[HCollectionViewCell Nib] forCellWithReuseIdentifier:@"collectionViewCellId"];
     
     
 }
@@ -120,31 +124,6 @@
 }
 
 
-#pragma mark - collectionViewCell dateSource
-
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
-{
-    return 3;
-}
-
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    HCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"collectionViewCellId" forIndexPath:indexPath];
-    cell.showLabel.text = @[@"心得",@"产品",@"分类"][indexPath.row];
-    return cell;
-}
-
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    return CGSizeMake(self.collectionView.frame.size.width/3, 30);
-}
-
-
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    NSInteger index = indexPath.row;
-    
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

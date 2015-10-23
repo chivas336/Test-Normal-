@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GuideView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="14c-WX-Psb">
+                    <rect key="frame" x="0.0" y="0.0" width="106.5" height="40"/>
+                    <animations/>
+                    <state key="normal" title="心得">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="fz7-po-Gic"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UiJ-2E-UHa">
+                    <rect key="frame" x="106.5" y="0.0" width="107" height="40"/>
+                    <animations/>
+                    <state key="normal" title="产品">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="hRT-ys-r7s"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cng-ie-LwW">
+                    <rect key="frame" x="213" y="0.0" width="106.5" height="40"/>
+                    <animations/>
+                    <state key="normal" title="推荐">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="l9g-sd-WoO"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Cng-ie-LwW" secondAttribute="bottom" id="38I-lF-gYY"/>
+                <constraint firstItem="UiJ-2E-UHa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3OZ-mJ-KAJ"/>
+                <constraint firstItem="UiJ-2E-UHa" firstAttribute="leading" secondItem="14c-WX-Psb" secondAttribute="trailing" id="9u0-64-T8B"/>
+                <constraint firstAttribute="bottom" secondItem="UiJ-2E-UHa" secondAttribute="bottom" id="9uk-yB-Tpy"/>
+                <constraint firstItem="Cng-ie-LwW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Fru-zz-s6O"/>
+                <constraint firstItem="Cng-ie-LwW" firstAttribute="leading" secondItem="UiJ-2E-UHa" secondAttribute="trailing" id="YDl-bm-q36"/>
+                <constraint firstAttribute="trailing" secondItem="Cng-ie-LwW" secondAttribute="trailing" id="bhZ-KN-AwE"/>
+                <constraint firstItem="UiJ-2E-UHa" firstAttribute="width" secondItem="Cng-ie-LwW" secondAttribute="width" id="cYM-kj-4ef"/>
+                <constraint firstItem="14c-WX-Psb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gtV-bz-E12"/>
+                <constraint firstItem="14c-WX-Psb" firstAttribute="width" secondItem="Cng-ie-LwW" secondAttribute="width" id="noN-P3-gnr"/>
+                <constraint firstItem="14c-WX-Psb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="u7I-Un-6SV"/>
+                <constraint firstAttribute="bottom" secondItem="14c-WX-Psb" secondAttribute="bottom" id="w5Q-Kd-kgg"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="leftButton" destination="14c-WX-Psb" id="2Wu-8t-LFE"/>
+                <outlet property="middleButton" destination="UiJ-2E-UHa" id="Rnz-sB-M47"/>
+                <outlet property="rightButton" destination="Cng-ie-LwW" id="Jfb-bk-yiE"/>
+            </connections>
+        </view>
+    </objects>
+</document>

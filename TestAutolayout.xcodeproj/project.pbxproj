@@ -33,6 +33,8 @@
 		75C95A281BDA19B300C6ED61 /* ThirdTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75C95A261BDA19B300C6ED61 /* ThirdTableViewController.xib */; };
 		75C95A2C1BDA237900C6ED61 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C95A2A1BDA237900C6ED61 /* SecondViewController.m */; };
 		75C95A2D1BDA237900C6ED61 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75C95A2B1BDA237900C6ED61 /* SecondViewController.xib */; };
+		75C95A301BDA35AA00C6ED61 /* GuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C95A2F1BDA35AA00C6ED61 /* GuideView.m */; };
+		75C95A341BDA380300C6ED61 /* GuideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75C95A331BDA380300C6ED61 /* GuideView.xib */; };
 		75EA6EBA1BD8EDC9005D51A6 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EA6EB81BD8EDC9005D51A6 /* ScrollViewController.m */; };
 		75EA6EBB1BD8EDC9005D51A6 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EA6EB81BD8EDC9005D51A6 /* ScrollViewController.m */; };
 		75EA6EBC1BD8EDC9005D51A6 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EA6EB81BD8EDC9005D51A6 /* ScrollViewController.m */; };
@@ -100,6 +102,9 @@
 		75C95A291BDA237900C6ED61 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		75C95A2A1BDA237900C6ED61 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		75C95A2B1BDA237900C6ED61 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		75C95A2E1BDA35AA00C6ED61 /* GuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideView.h; sourceTree = "<group>"; };
+		75C95A2F1BDA35AA00C6ED61 /* GuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideView.m; sourceTree = "<group>"; };
+		75C95A331BDA380300C6ED61 /* GuideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GuideView.xib; sourceTree = "<group>"; };
 		75EA6EB71BD8EDC9005D51A6 /* ScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
 		75EA6EB81BD8EDC9005D51A6 /* ScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
 		75EA6EB91BD8EDC9005D51A6 /* ScrollViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScrollViewController.xib; sourceTree = "<group>"; };
@@ -182,6 +187,9 @@
 				75C95A151BDA032800C6ED61 /* HCollectionViewCell.h */,
 				75C95A161BDA032800C6ED61 /* HCollectionViewCell.m */,
 				75C95A171BDA032800C6ED61 /* HCollectionViewCell.xib */,
+				75C95A2E1BDA35AA00C6ED61 /* GuideView.h */,
+				75C95A2F1BDA35AA00C6ED61 /* GuideView.m */,
+				75C95A331BDA380300C6ED61 /* GuideView.xib */,
 				750FFE861BD8C1E100C9AC19 /* ViewController.h */,
 				750FFE871BD8C1E100C9AC19 /* ViewController.m */,
 				750FFE891BD8C1E100C9AC19 /* Main.storyboard */,
@@ -345,6 +353,7 @@
 				750FFEB71BD8CD5200C9AC19 /* XibViewController.xib in Resources */,
 				750FFE901BD8C1E100C9AC19 /* LaunchScreen.storyboard in Resources */,
 				75C95A281BDA19B300C6ED61 /* ThirdTableViewController.xib in Resources */,
+				75C95A341BDA380300C6ED61 /* GuideView.xib in Resources */,
 				75C95A091BD9D8A400C6ED61 /* PageViewController.xib in Resources */,
 				750FFE8D1BD8C1E100C9AC19 /* Assets.xcassets in Resources */,
 				750FFEBE1BD8D46F00C9AC19 /* ThreeEqualViewController.xib in Resources */,
@@ -432,6 +441,7 @@
 				750FFEB61BD8CD5200C9AC19 /* XibViewController.m in Sources */,
 				75C95A131BDA010F00C6ED61 /* BranchTableViewController.m in Sources */,
 				750FFE881BD8C1E100C9AC19 /* ViewController.m in Sources */,
+				75C95A301BDA35AA00C6ED61 /* GuideView.m in Sources */,
 				75C95A081BD9D8A400C6ED61 /* PageViewController.m in Sources */,
 				750FFE851BD8C1E100C9AC19 /* AppDelegate.m in Sources */,
 				75EA6EBA1BD8EDC9005D51A6 /* ScrollViewController.m in Sources */,
